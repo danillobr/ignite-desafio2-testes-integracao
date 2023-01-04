@@ -18,9 +18,9 @@ describe("Create user controller", () => {
 
   it("Should be able to create a new user.", async () => {
     const response = await request(app).post("/api/v1/users").send({
-      name: "spencer",
-      email: "spencer@email.com",
-      password: "1234",
+      name: "test",
+      email: "test@email.com",
+      password: "test123",
     });
 
     expect(response.status).toBe(201);
